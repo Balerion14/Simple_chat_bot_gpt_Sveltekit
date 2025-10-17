@@ -23,13 +23,14 @@ src/
  │   ├─ assets/                 → favicon & static assets
  │   └─ server/
  │        ├─ api_llm/openai.ts  → OpenAI client (chat completions)
- │        └─ supabase/client.ts → Optional Supabase helpers
+ │        └─ supabase/client.ts → Supabase client and functions
  ├─ routes/
  │   ├─ +layout.svelte          → Navigation bar, light/dark theme
  │   ├─ +page.svelte            → Home page
- │   ├─ speak-with-llm/         → Chat interface (client-side fetch)
- │   │   └─ +page.svelte
- │   └─ api/chat/+server.ts     → POST endpoint to relay messages
+ │   ├─ speak-with-llm/
+ │   │   ├─ +page.svelte       → Chat interface & form actions
+ │   │   └─ +page.server.ts    → Load messages & save to DB actions
+ │   └─ api/chat/+server.ts     → POST endpoint to relay messages to LLM
  └─ app.css / app.html          → Global styles & SvelteKit shell
 ```
 
