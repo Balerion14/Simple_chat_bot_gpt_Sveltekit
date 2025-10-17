@@ -6,7 +6,10 @@ Of course, here is your README file in English.
 
 A modern mini-chat application built with **SvelteKit**, **TypeScript**, **TailwindCSS**, and optional integration with **Supabase** and **OpenAI**. The project showcases a clean interface, global navigation, and a lightweight API to interact with a language model.
 
-> Add a screenshot in `docs/app-preview.png` to display the preview above.
+![Aperçu de l’interface](docs/app-preview.png)
+![Aperçu de l’interface](docs/app-preview_2.png)
+
+> Ajoute une capture d’écran dans `docs/app-preview.png` pour afficher l’aperçu ci-dessus.
 
 ## 🎯 Learning Objectives
 
