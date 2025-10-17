@@ -9,8 +9,6 @@ A modern mini-chat application built with **SvelteKit**, **TypeScript**, **Tailw
 ![Aperçu de l’interface](docs/app-preview.png)
 ![Aperçu de l’interface](docs/app-preview_2.png)
 
-> Ajoute une capture d’écran dans `docs/app-preview.png` pour afficher l’aperçu ci-dessus.
-
 ## 🎯 Learning Objectives
 
   - **SvelteKit Client & Server-Side**: Navigation, shared layout, and a custom API route to relay messages to the model.
