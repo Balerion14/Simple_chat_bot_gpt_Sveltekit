@@ -19,19 +19,21 @@ A modern mini-chat application built with **SvelteKit**, **TypeScript**, **Tailw
 
 ```
 src/
- ├─ lib/
- │   ├─ assets/                 → favicon & static assets
- │   └─ server/
- │        ├─ api_llm/openai.ts  → OpenAI client (chat completions)
- │        └─ supabase/client.ts → Supabase client and functions
- ├─ routes/
- │   ├─ +layout.svelte          → Navigation bar, light/dark theme
- │   ├─ +page.svelte            → Home page
- │   ├─ speak-with-llm/
- │   │   ├─ +page.svelte       → Chat interface & form actions
- │   │   └─ +page.server.ts    → Load messages & save to DB actions
- │   └─ api/chat/+server.ts     → POST endpoint to relay messages to LLM
- └─ app.css / app.html          → Global styles & SvelteKit shell
+ ├─ lib/
+ │   ├─ assets/                 → favicon & static assets
+ │   └─ server/
+ │        ├─ api_llm/openai.ts  → OpenAI client (chat completions)
+ │        └─ supabase/client.ts → Supabase client and functions
+ ├─ routes/
+ │   ├─ +layout.svelte          → Navigation bar, light/dark theme
+ │   ├─ +layout.ts              → Loads shared data (e.g. current path, user, settings)
+ │   ├─ +page.svelte            → Home page
+ │   ├─ speak-with-llm/
+ │   │   ├─ +page.svelte        → Chat interface & form actions
+ │   │   └─ +page.server.ts     → Load messages & save to DB actions
+ │   └─ api/chat/+server.ts     → POST endpoint to relay messages to LLM
+ └─ app.css / app.html          → Global styles & SvelteKit shell
+
 ```
 
 -----
