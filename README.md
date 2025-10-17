@@ -1,7 +1,3 @@
-Of course, here is your README file in English.
-
------
-
 # Mini Chat GPT · SvelteKit Demo
 
 A modern mini-chat application built with **SvelteKit**, **TypeScript**, **TailwindCSS**, and optional integration with **Supabase** and **OpenAI**. The project showcases a clean interface, global navigation, and a lightweight API to interact with a language model.
